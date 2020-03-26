@@ -1,12 +1,30 @@
 
 
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include media-breakpoint-up(md) { 
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
 
+.page-hero {
+    .page-hero-content {
+        min-height: 336px;
+        h1, h2, p {
+            color: $white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
 
 
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) { 
 
 }
+
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) { 
 

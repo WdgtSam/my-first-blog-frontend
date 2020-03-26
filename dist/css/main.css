@@ -370,7 +370,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
 h2, .h2 {
@@ -9897,5 +9897,29 @@ html {
 /****************
   Fonts Import
 *****************/
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 3rem;
+  }
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.page-hero .page-hero-content {
+  min-height: 336px;
+}
+.page-hero .page-hero-content h1, .page-hero .page-hero-content h2, .page-hero .page-hero-content p {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 /*# sourceMappingURL=main.css.map */
