@@ -9914,6 +9914,20 @@ html {
   }
 }
 
+.page-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.page-hero::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url("../../assets/img/pattern-hero.png");
+}
 .page-hero .page-hero-content {
   min-height: 336px;
 }
