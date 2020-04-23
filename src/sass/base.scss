@@ -1,6 +1,24 @@
 
 
-.section {
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    @extend %no-scrollbar;
+}
+
+main {
+    margin-top: 56px;
+}
+
+.navbar-brand {
+    height: 40px;
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.section-y-padding {
     padding-top: 2rem;
     padding-bottom: 2rem;
     @include media-breakpoint-up(md) { 
@@ -32,6 +50,28 @@
     }
 }
 
+.section-who-we-are {
+    position: relative;
+    img.img-who-we-are {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: auto;
+    }
+}
+
+/**
+* Tease
+*/
+
+//tease category
+.tease-category {
+    position: relative;
+    height: 275px;
+    @include media-breakpoint-up(md) {
+        height: 300px;
+    }
+}
 
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) { 
